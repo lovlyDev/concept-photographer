@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Вера Лаврова — фотограф</title>
+  <meta name="description" content="Вера Лаврова — портретный и пейзажный фотограф. Концепт сайта-визитки от lovlyDev." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3f1ec'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' font-style='italic' text-anchor='middle' fill='%23111'%3EВ%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">В. Лаврова</a>
+    <nav>
+      <a href="#work">Работы</a>
+      <a href="#about">Обо мне</a>
+      <a href="#price">Съёмка</a>
+      <a href="#contact">Связь</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1 class="name"><span>Вера</span><span>Лаврова</span></h1>
+      <picture class="hero-photo">
+        <source srcset="img/p2.avif" type="image/avif" />
+        <img src="img/p2.webp" alt="Чёрно-белый портрет девушки" />
+      </picture>
+      <p class="hero-note">Портретный и&nbsp;пейзажный фотограф. Снимаю людей такими, какие они есть, — и&nbsp;места такими, какими их запоминают.</p>
+      <p class="hero-meta">Москва — и&nbsp;везде, куда позовёте<br />с 2016 года</p>
+    </section>
+
+    <section class="work wrap" id="work">
+      <div class="work-head reveal">
+        <h2>Избранное</h2>
+        <div class="filters" role="group" aria-label="Серии">
+          <button class="on" data-f="all">Все</button>
+          <button data-f="portrait">Портреты</button>
+          <button data-f="nature">Природа</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure data-cat="portrait" class="reveal tall"><picture><source srcset="img/p1.avif" type="image/avif" /><img src="img/p1.webp" alt="Портрет в чёрном" loading="lazy" /></picture><figcaption>Тишина · 2024</figcaption></figure>
+        <figure data-cat="nature" class="reveal wide"><picture><source srcset="img/l1.avif" type="image/avif" /><img src="img/l1.webp" alt="Горы с высоты" loading="lazy" /></picture><figcaption>Хребет · 2023</figcaption></figure>
+        <figure data-cat="portrait" class="reveal"><picture><source srcset="img/p3.avif" type="image/avif" /><img src="img/p3.webp" alt="Крупный портрет лица" loading="lazy" /></picture><figcaption>Свет из окна · 2024</figcaption></figure>
+        <figure data-cat="nature" class="reveal"><picture><source srcset="img/l2.avif" type="image/avif" /><img src="img/l2.webp" alt="Лес в тумане" loading="lazy" /></picture><figcaption>Туман · 2022</figcaption></figure>
+        <figure data-cat="portrait" class="reveal tall"><picture><source srcset="img/p4.avif" type="image/avif" /><img src="img/p4.webp" alt="Мужской портрет" loading="lazy" /></picture><figcaption>Взгляд · 2023</figcaption></figure>
+        <figure data-cat="nature" class="reveal wide"><picture><source srcset="img/l3.avif" type="image/avif" /><img src="img/l3.webp" alt="Голубые горы" loading="lazy" /></picture><figcaption>Синие хребты · 2023</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="quote wrap reveal">
+      <p>«Хороший портрет — это не про идеальный свет. Это про момент, когда человек забывает о камере».</p>
+    </section>
+
+    <section class="about wrap" id="about">
+      <picture class="about-photo reveal"><source srcset="img/p1.avif" type="image/avif" /><img src="img/p1.webp" alt="" loading="lazy" /></picture>
+      <div class="about-text reveal">
+        <h2>Обо мне</h2>
+        <p>Я снимаю восемь лет: начинала с пейзажей в походах, потом поняла, что больше всего люблю лица. Работаю с естественным светом, почти не ретуширую кожу и всегда отдаю съёмку в черно-белом и цветном вариантах.</p>
+        <p>Публиковалась в городских журналах, провела две персональные выставки. Снимаю на среднеформатную камеру и плёнку — по желанию.</p>
+        <ul>
+          <li><span>Съёмок</span><strong>600+</strong></li>
+          <li><span>Выставки</span><strong>2</strong></li>
+          <li><span>Срок готовности</span><strong>7 дней</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price wrap" id="price">
+      <h2 class="reveal">Съёмка</h2>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Портрет</h3><p class="cost">12 000 ₽</p>
+          <ul><li>1 час съёмки</li><li>Студия или улица</li><li>20 фото в обработке</li><li>Помощь с образом</li></ul>
+        </article>
+        <article class="plan featured reveal">
+          <span class="tag">Чаще всего выбирают</span>
+          <h3>История</h3><p class="cost">22 000 ₽</p>
+          <ul><li>2–3 часа, 2 локации</li><li>Пара, семья или личный бренд</li><li>50 фото в обработке</li><li>Плёночные кадры в подарок</li></ul>
+        </article>
+        <article class="plan reveal">
+          <h3>Выезд</h3><p class="cost">от 40 000 ₽</p>
+          <ul><li>Целый день на природе</li><li>Пейзаж + портрет</li><li>80+ фото в обработке</li><li>Печать 5 работ</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner reveal">
+        <h2>Давайте<br /><em>снимем вас</em></h2>
+        <div>
+          <a href="#contact" class="big-link">hello@example.com</a>
+          <p>Отвечаю в течение дня. Расскажите, какую съёмку хотите, — пришлю примеры и свободные даты.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>В. Лаврова</span>
+    <p>Концепт сайта для портфолио. Фотограф вымышлен, снимки — Unsplash.</p>
+    <a href="https://lovlydev.github.io" target="_blank" rel="noreferrer">Сделано lovlyDev ↗</a>
+  </footer>
+
+  <div class="lightbox" id="lb" hidden>
+    <button class="lb-close" aria-label="Закрыть">×</button>
+    <img alt="" />
+    <p></p>
+  </div>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('in'), io.unobserve(e.target))), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // series filter
+    document.querySelectorAll('[data-f]').forEach(b => b.addEventListener('click', () => {
+      document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b));
+      document.querySelectorAll('.gallery figure').forEach(f => f.classList.toggle('off', b.dataset.f !== 'all' && f.dataset.cat !== b.dataset.f));
+    }));
+
+    // lightbox
+    const lb = document.getElementById('lb');
+    document.querySelectorAll('.gallery figure').forEach(f => f.addEventListener('click', () => {
+      const img = f.querySelector('img');
+      lb.querySelector('img').src = img.currentSrc || img.src;
+      lb.querySelector('img').alt = img.alt;
+      lb.querySelector('p').textContent = f.querySelector('figcaption').textContent;
+      lb.hidden = false;
+    }));
+    const close = () => (lb.hidden = true);
+    lb.addEventListener('click', e => e.target.tagName !== 'IMG' && close());
+    addEventListener('keydown', e => e.key === 'Escape' && close());
+
+    // the big name drifts apart a little while scrolling
+    const parts = document.querySelectorAll('.name span');
+    addEventListener('scroll', () => {
+      const y = Math.min(scrollY, innerHeight);
+      parts[0].style.transform = `translateX(${-y * .15}px)`;
+      parts[1].style.transform = `translateX(${y * .15}px)`;
+    }, { passive: true });
+  </script>
+</body>
+</html>
